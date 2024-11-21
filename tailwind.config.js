@@ -25,10 +25,11 @@ module.exports = {
 				white: '#FFF',
 				purpure: '#B994FF',
 				yellow: '#FFDB14',
-				accent: {
-					default: '#00ff99',
-					hover: '#00e187',
-				},
+
+				youtube: '#fe0032',
+				discord: '#5764f1',
+				twitch: '#8b45f6',
+				spotify: '#00d859',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
