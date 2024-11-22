@@ -31,7 +31,30 @@ const links = [
 	},
 ];
 
-const Navigation = () => {
+const socials = [
+	{
+		link: 'https://www.youtube.com/@DotDager',
+		icon: <AiFillYoutube />,
+		color: 'text-youtube',
+	},
+	{
+		link: 'https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?nd=1',
+		icon: <AiFillSpotify />,
+		color: 'text-spotify',
+	},
+	{
+		link: 'https://www.twitch.tv/dagerxiv',
+		icon: <AiFillTwitch />,
+		color: 'text-twitch',
+	},
+	{
+		link: 'https://discord.com/invite/4NFk6TamAB',
+		icon: <AiFillDiscord />,
+		color: 'text-discord',
+	},
+];
+
+const Menu = () => {
 	const pathname = usePathname();
 
 	return (
@@ -57,34 +80,19 @@ const Navigation = () => {
 				</nav>
 				{/* Redes Sociales */}
 				<div className='flex gap-5'>
-					<Link
-						target='_blank'
-						className='hover:text-youtube'
-						href='https://www.youtube.com/@DotDager'>
-						<AiFillYoutube className='size-8' />
-					</Link>
-					<Link
-						target='_blank'
-						className='hover:text-spotify'
-						href='https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?nd=1'>
-						<AiFillSpotify className='size-8' />
-					</Link>
-					<Link
-						target='_blank'
-						className='hover:text-twitch'
-						href='https://www.twitch.tv/dagerxiv'>
-						<AiFillTwitch className='size-8' />
-					</Link>
-					<Link
-						target='_blank'
-						className='hover:text-discord'
-						href='https://discord.com/invite/4NFk6TamAB'>
-						<AiFillDiscord className='size-8' />
-					</Link>
+					{socials.map((social, index) => (
+						<Link
+							key={index}
+							target='_blank'
+							className={`text-gray text-3xl hover:${social.color}`}
+							href={social.link}>
+							{social.icon}
+						</Link>
+					))}
 				</div>
 			</SheetContent>
 		</Sheet>
 	);
 };
 
-export default Navigation;
+export default Menu;
