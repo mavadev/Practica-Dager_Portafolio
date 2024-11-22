@@ -15,19 +15,19 @@ const links = [
 	},
 	{
 		name: 'Quien Soy',
-		path: '/about-me',
+		path: '#sobre-mi',
 	},
 	{
 		name: 'Canales',
-		path: '/canales',
+		path: '#canales',
 	},
 	{
 		name: 'Momentos',
-		path: '/momentos',
+		path: '#momentos',
 	},
 	{
 		name: 'Únete al Antro',
-		path: '/antro',
+		path: '#antro',
 	},
 ];
 

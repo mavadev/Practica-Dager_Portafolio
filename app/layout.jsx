@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
 		<html lang='es'>
 			<body className={`${titleFont.variable} ${textFont.variable} antialiased`}>
 				<Header />
+
 				{children}
 			</body>
 		</html>
