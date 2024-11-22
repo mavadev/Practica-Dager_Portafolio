@@ -6,21 +6,24 @@ import { CiMenuFries } from 'react-icons/ci';
 import Logo from './Logo';
 import Link from 'next/link';
 import { links, networks } from '@/data/menuData';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet';
 
 const Menu = () => {
 	const pathname = usePathname();
 
 	return (
-		<Sheet>
+		<Sheet modal={true}>
 			<SheetTrigger className='flex justify-center items-center'>
 				<CiMenuFries className='text-[32px] text-orange' />
 			</SheetTrigger>
-			<SheetContent className='flex flex-col justify-between py-20 items-center'>
+			<SheetContent className='flex flex-col justify-between py-28 items-center'>
 				{/* Logo */}
-				<div className='text-center scale-150'>
-					<Logo />
-				</div>
+				<SheetHeader>
+					<div className='text-center scale-150'>
+						<Logo />
+					</div>
+				</SheetHeader>
+
 				{/* Navegación */}
 				<nav className='flex flex-col gap-5 items-center'>
 					{links.map((link, index) => (
@@ -32,6 +35,7 @@ const Menu = () => {
 						</Link>
 					))}
 				</nav>
+
 				{/* Redes Sociales */}
 				<div className='flex gap-5'>
 					{networks.map((network, index) => (

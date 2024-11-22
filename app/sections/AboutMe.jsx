@@ -1,5 +1,13 @@
-import Image from 'next/image';
+'use client';
+
+import 'react-image-gallery/styles/css/image-gallery.css';
+import ImageGallery from 'react-image-gallery';
 import { GiGuitarBassHead } from 'react-icons/gi';
+
+const elements = Array.from({ length: 10 }).map((_, index) => ({
+	original: `/images/galeria/dager-foto-${index + 1}.webp`,
+	thumbnail: `/images/galeria/dager-foto-${index + 1}.webp`,
+}));
 
 export const AboutMe = () => {
 	return (
@@ -8,15 +16,16 @@ export const AboutMe = () => {
 			className='mt-28 mb-20'>
 			<div className='container mx-auto flex flex-col-reverse md:flex-row gap-10 md:items-end'>
 				{/* Foto */}
-				<div className='flex-1'>
-					<div className='relative flex-1 aspect-video mb-2'>
-						<Image
-							fill
-							alt='Dog Dager'
-							objectFit='cover'
-							src='/images/dager-about-me.webp'
-						/>
-					</div>
+				<div className='flex-1 overflow-hidden'>
+					<ImageGallery
+						autoPlay
+						showNav={false}
+						items={elements}
+						slideInterval={3000}
+						showPlayButton={false}
+						showFullscreenButton={false}
+						additionalClass='w-full'
+					/>
 					<p className='text-gray text-right'>Porque todos necesitamos un poquito de caos bien organizado</p>
 				</div>
 				{/* Información */}
