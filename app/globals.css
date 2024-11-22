@@ -4,6 +4,10 @@
 
 @layer base {
 	body {
+		background-size: auto;
+		background-repeat: repeat;
+		background-blend-mode: overlay;
+		background-image: url('/images/otros/pepino-white.png');
 		@apply font-primary bg-black text-white leading-loose;
 	}
 

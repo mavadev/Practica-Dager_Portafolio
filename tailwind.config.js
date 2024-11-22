@@ -38,5 +38,6 @@ module.exports = {
 			},
 		},
 	},
+	safelist: ['text-youtube', 'text-discord', 'text-twitch', 'text-spotify'],
 	plugins: [require('tailwindcss-animate')],
 };

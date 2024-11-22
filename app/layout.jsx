@@ -10,8 +10,8 @@ const titleFont = Bagel_Fat_One({ subsets: ['latin'], weight: ['400'], variable:
 const textFont = Patrick_Hand({ subsets: ['latin'], weight: ['400'], variable: '--font-patrickHand' });
 
 export const metadata = {
-	title: 'Dog Dager | Inicio',
-	description: 'Portafolio / Landing Page creado para Dog Dager',
+	title: 'Dog Dager',
+	description: 'Landing Page creado para Dager (Mariano Villas)',
 };
 
 export default function RootLayout({ children }) {

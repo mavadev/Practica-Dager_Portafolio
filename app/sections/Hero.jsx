@@ -15,7 +15,8 @@ export const Hero = () => {
 				<div className='text-center md:text-left md:flex-1'>
 					<p className='text-xl text-gray'>Bienvenido al Universo de</p>
 					<h1 className='title mb-6 text-orange'>Dog Dager</h1>
-					<p className='max-w-[300px]'>Programador, amante de la música, explorador del edutenimiento y arquitecto del caos organizado</p>
+					<p className='text-xl'>Se nota que es mi universo? No verdad?</p>
+					<p className='text-xl text-gray'>Vale.</p>
 				</div>
 				{/* Foto */}
 				<motion.div

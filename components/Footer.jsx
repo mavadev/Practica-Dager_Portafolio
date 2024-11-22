@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Logo from './Logo';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { links, networks } from '@/data/menuData';
 
 export const Footer = () => {
@@ -28,7 +28,7 @@ export const Footer = () => {
 	}, []);
 
 	return (
-		<footer>
+		<footer className='bg-black py-10'>
 			<div className='container mx-auto'>
 				{/* Content */}
 				<div className='flex flex-col md:flex-row justify-between'>
@@ -42,7 +42,7 @@ export const Footer = () => {
 									key={index}
 									target='_blank'
 									href={network.link}
-									className={`text-gray text-3xl hover:${network.social.color}`}>
+									className={`text-3xl ${network.social.color} hover:opacity-75`}>
 									{network.social.icon}
 								</Link>
 							))}
@@ -63,7 +63,7 @@ export const Footer = () => {
 				</div>
 
 				{/* Footer */}
-				<div className='w-full py-10 flex flex-col md:flex-row items-center justify-between'>
+				<div className='w-full pt-10 flex flex-col md:flex-row items-center justify-between'>
 					{/* Atte */}
 					<p className='text-gray'>
 						Diseñado y Desarrollo por Gianmarco para <span className='text-orange'>Dager</span>
