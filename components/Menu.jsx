@@ -2,57 +2,11 @@
 
 import { usePathname } from 'next/navigation';
 import { CiMenuFries } from 'react-icons/ci';
-import { AiFillYoutube, AiFillSpotify, AiFillTwitch, AiFillDiscord } from 'react-icons/ai';
 
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from './Logo';
 import Link from 'next/link';
-
-const links = [
-	{
-		name: 'Inicio',
-		path: '/',
-	},
-	{
-		name: 'Quien Soy',
-		path: '#sobre-mi',
-	},
-	{
-		name: 'Canales',
-		path: '#canales',
-	},
-	{
-		name: 'Momentos',
-		path: '#momentos',
-	},
-	{
-		name: 'Únete al Antro',
-		path: '#antro',
-	},
-];
-
-const socials = [
-	{
-		link: 'https://www.youtube.com/@DotDager',
-		icon: <AiFillYoutube />,
-		color: 'text-youtube',
-	},
-	{
-		link: 'https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?nd=1',
-		icon: <AiFillSpotify />,
-		color: 'text-spotify',
-	},
-	{
-		link: 'https://www.twitch.tv/dagerxiv',
-		icon: <AiFillTwitch />,
-		color: 'text-twitch',
-	},
-	{
-		link: 'https://discord.com/invite/4NFk6TamAB',
-		icon: <AiFillDiscord />,
-		color: 'text-discord',
-	},
-];
+import { links, networks } from '@/data/menuData';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Menu = () => {
 	const pathname = usePathname();
@@ -80,13 +34,13 @@ const Menu = () => {
 				</nav>
 				{/* Redes Sociales */}
 				<div className='flex gap-5'>
-					{socials.map((social, index) => (
+					{networks.map((network, index) => (
 						<Link
 							key={index}
 							target='_blank'
-							className={`text-gray text-3xl hover:${social.color}`}
-							href={social.link}>
-							{social.icon}
+							href={network.link}
+							className={`text-gray text-3xl hover:${network.social.color}`}>
+							{network.social.icon}
 						</Link>
 					))}
 				</div>

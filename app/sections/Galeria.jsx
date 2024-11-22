@@ -6,7 +6,9 @@ export const Galeria = () => {
 	return (
 		<section className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 mb-20'>
 			{elements.map((_, index) => (
-				<div className=' relative aspect-video'>
+				<div
+					key={index}
+					className=' relative aspect-video'>
 					<Image
 						fill
 						objectFit='cover'

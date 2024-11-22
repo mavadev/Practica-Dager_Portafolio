@@ -1,6 +1,7 @@
 import { Hero } from './sections/Hero';
 import { AboutMe } from './sections/AboutMe';
 import { Galeria } from './sections/Galeria';
+import { Canales } from './sections/Canales';
 
 export default function Home() {
 	return (
@@ -8,6 +9,7 @@ export default function Home() {
 			<Hero />
 			<AboutMe />
 			<Galeria />
+			<Canales />
 		</>
 	);
 }
