@@ -9,7 +9,7 @@ export const Hero = () => {
 	return (
 		<section
 			id='inicio'
-			className='h-screen py-20'>
+			className='h-svh py-20'>
 			<div className='container mx-auto h-full flex flex-col md:flex-row items-center md:items-end max-md:justify-center gap-10'>
 				{/* Información */}
 				<div className='text-center md:text-left md:flex-1'>

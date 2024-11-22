@@ -6,7 +6,7 @@ import { CiMenuFries } from 'react-icons/ci';
 import Logo from './Logo';
 import Link from 'next/link';
 import { links, networks } from '@/data/menuData';
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const Menu = () => {
 	const pathname = usePathname();
@@ -18,11 +18,11 @@ const Menu = () => {
 			</SheetTrigger>
 			<SheetContent className='flex flex-col justify-between py-28 items-center'>
 				{/* Logo */}
-				<SheetHeader>
+				<SheetTitle>
 					<div className='text-center scale-150'>
 						<Logo />
 					</div>
-				</SheetHeader>
+				</SheetTitle>
 
 				{/* Navegación */}
 				<nav className='flex flex-col gap-5 items-center'>

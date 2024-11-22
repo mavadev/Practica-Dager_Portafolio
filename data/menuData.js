@@ -10,16 +10,8 @@ export const links = [
 		path: '#sobre-mi',
 	},
 	{
-		name: 'Canales',
-		path: '#canales',
-	},
-	{
-		name: 'Momentos',
-		path: '#momentos',
-	},
-	{
-		name: 'Únete al Antro',
-		path: '#antro',
+		name: 'Mis Facetas',
+		path: '#mis-facetas',
 	},
 ];
 

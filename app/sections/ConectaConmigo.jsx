@@ -7,7 +7,7 @@ export const ConectaConmigo = () => {
 					height='100%'
 					allowFullScreen
 					title='Dog Dager Last Video'
-					referrerpolicy='strict-origin-when-cross-origin'
+					referrerPolicy='strict-origin-when-cross-origin'
 					src='https://www.youtube-nocookie.com/embed/DaRes1TR3XQ?si=mNJkJuNagO7nTTBe?rel=0'
 					allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 				/>
@@ -18,7 +18,7 @@ export const ConectaConmigo = () => {
 					height='100%'
 					allowFullScreen
 					title='Antro Dager Last Video'
-					referrerpolicy='strict-origin-when-cross-origin'
+					referrerPolicy='strict-origin-when-cross-origin'
 					src='https://www.youtube-nocookie.com/embed/KZYWWsiMrbA?si=EzK4LRERE_IYD3Am'
 					allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 				/>
