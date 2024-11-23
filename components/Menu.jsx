@@ -27,7 +27,7 @@ const Menu = () => {
 						<Link
 							key={index}
 							href={link.path}
-							className={`${link.path === true ? 'text-orange text-4xl' : 'text-3xl'} capitalize hover:text-yellow transition-all`}>
+							className={`${link.path === true ? 'text-orange text-5xl' : 'text-4xl'} capitalize hover:text-yellow transition-all`}>
 							{link.name}
 						</Link>
 					))}

@@ -30,6 +30,7 @@ module.exports = {
 				discord: '#5764f1',
 				twitch: '#8b45f6',
 				spotify: '#00d859',
+				instagram: '#FF5B00',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -38,6 +39,6 @@ module.exports = {
 			},
 		},
 	},
-	safelist: ['text-youtube', 'text-discord', 'text-twitch', 'text-spotify'],
+	safelist: ['text-youtube', 'text-discord', 'text-twitch', 'text-spotify', 'text-instagram'],
 	plugins: [require('tailwindcss-animate')],
 };

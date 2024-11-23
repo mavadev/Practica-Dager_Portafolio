@@ -16,7 +16,7 @@ export const Canales = () => {
 					<div
 						key={index}
 						className='flex flex-col items-center text-center'>
-						<div className='relative w-36 aspect-square rounded-2xl overflow-hidden mb-5'>
+						<div className='relative w-36 aspect-square overflow-hidden mb-5'>
 							<Image
 								fill
 								objectFit='cover'

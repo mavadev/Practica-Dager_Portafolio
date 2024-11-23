@@ -34,7 +34,7 @@ export const Hero = () => {
 						fill
 						priority
 						objectFit='cover'
-						className='self-start'
+						className='rotate-3'
 						alt='Dog Dager Background'
 						src='/images/dog-dager-banner.webp'
 					/>

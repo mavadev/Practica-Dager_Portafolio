@@ -21,6 +21,10 @@ export const networks = [
 		link: 'https://www.youtube.com/@DotDager',
 	},
 	{
+		social: socials['instagram'],
+		link: 'https://www.instagram.com/dager.32/',
+	},
+	{
 		social: socials['spotify'],
 		link: 'https://open.spotify.com/intl-es/artist/6bkClBMJd4qKxJp0J5vHsz?nd=1',
 	},

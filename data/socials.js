@@ -1,13 +1,13 @@
-import { AiFillYoutube, AiFillSpotify, AiFillTwitch, AiFillDiscord } from 'react-icons/ai';
+import { AiFillYoutube, AiFillSpotify, AiFillTwitch, AiFillDiscord, AiFillInstagram } from 'react-icons/ai';
 
 export const socials = {
 	youtube: {
 		color: 'text-youtube',
 		icon: <AiFillYoutube />,
 	},
-	discord: {
-		color: 'text-discord',
-		icon: <AiFillDiscord />,
+	instagram: {
+		color: 'text-instagram',
+		icon: <AiFillInstagram />,
 	},
 	twitch: {
 		color: 'text-twitch',
@@ -16,5 +16,9 @@ export const socials = {
 	spotify: {
 		color: 'text-spotify',
 		icon: <AiFillSpotify />,
+	},
+	discord: {
+		color: 'text-discord',
+		icon: <AiFillDiscord />,
 	},
 };

@@ -50,16 +50,19 @@ export const Footer = () => {
 					</div>
 
 					{/* Links */}
-					<nav className='hidden md:flex flex-col gap-1 text-right'>
-						{links.map((link, index) => (
-							<Link
-								key={index}
-								href={link.path}
-								className={`${currentSection === link.path ? 'text-orange text-xl' : 'text-gray text-lg'} uppercase  hover:text-yellow transition-all`}>
-								{link.name}
-							</Link>
-						))}
-					</nav>
+					<div>
+						<p className='text-xl uppercase text-orange/50 transition-all text-right mb-2'>enlaces</p>
+						<nav className='hidden md:flex flex-col gap-1 text-right'>
+							{links.map((link, index) => (
+								<Link
+									key={index}
+									href={link.path}
+									className={`${currentSection === link.path ? 'text-orange text-xl' : 'text-gray text-lg'} uppercase  hover:text-yellow transition-all`}>
+									{link.name}
+								</Link>
+							))}
+						</nav>
+					</div>
 				</div>
 
 				{/* Footer */}
