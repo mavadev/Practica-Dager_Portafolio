@@ -7,9 +7,11 @@ export const Canales = () => {
 		<section
 			id='canales'
 			className='mb-16 container mx-auto'>
-			<header className='text-center mb-14'>
-				<h3 className='h2 mb-2 text-orange'>Mis Facetas</h3>
-				<h2 className='h2'>Dager en Todas sus Formas</h2>
+			<header className='max-md:text-center mb-14'>
+				<h3 className='h2 mb-2 text-orange'>
+					Mis <span className='line-through text-gray/50 select-none'>Poses</span> Exclusivas
+				</h3>
+				<h2 className='h2'>Dager en Todas sus Facetas</h2>
 			</header>
 			<div className='grid grid-cols-2 md:grid-cols-4 justify-center gap-y-10'>
 				{channels.map((channel, index) => (
@@ -30,14 +32,14 @@ export const Canales = () => {
 										key={index}
 										href={link}
 										target='_blank'
-										className={`text-gray text-3xl hover:${social.color}`}>
+										className={`text-gray text-4xl hover:${social.color}`}>
 										{social.icon}
 									</Link>
 								))}
 							</div>
 						</div>
 						<h3 className='h3 mb-2'>{channel.title}</h3>
-						<p className='text-xl max-w-[170px]'>{channel.description}</p>
+						<p className='text-xl max-w-[170px] text-white/90'>{channel.description}</p>
 					</div>
 				))}
 			</div>

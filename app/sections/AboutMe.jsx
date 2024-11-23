@@ -5,26 +5,27 @@ import ImageGallery from 'react-image-gallery';
 import { GiGuitarBassHead } from 'react-icons/gi';
 
 const elements = Array.from({ length: 10 }).map((_, index) => ({
-	original: `/images/galeria/dager-foto-${index + 1}.webp`,
-	thumbnail: `/images/galeria/dager-foto-${index + 1}.webp`,
+	original: `/images/galeria/dager-foto-${index}.webp`,
+	thumbnail: `/images/galeria/dager-foto-${index}.webp`,
 }));
 
 export const AboutMe = () => {
 	return (
 		<section
-			id='sobre-mi'
+			id='dager'
 			className='mt-28 mb-20'>
 			<div className='container mx-auto flex flex-col-reverse md:flex-row gap-10 md:items-end'>
 				{/* Foto */}
 				<div className='flex-1 overflow-hidden'>
 					<ImageGallery
 						autoPlay
+						lazyLoad
 						showNav={false}
 						items={elements}
 						slideInterval={3000}
 						showPlayButton={false}
-						showFullscreenButton={false}
 						additionalClass='w-full'
+						showFullscreenButton={false}
 					/>
 					<p className='text-gray text-right'>Porque todos necesitamos un poquito de caos bien organizado</p>
 				</div>

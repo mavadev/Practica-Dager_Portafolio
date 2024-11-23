@@ -3,15 +3,15 @@ import { socials } from '@/data/socials';
 export const links = [
 	{
 		name: 'Inicio',
-		path: '#inicio',
+		path: 'inicio',
 	},
 	{
 		name: 'Quien Soy',
-		path: '#sobre-mi',
+		path: 'dager',
 	},
 	{
 		name: 'Mis Facetas',
-		path: '#mis-facetas',
+		path: 'canales',
 	},
 ];
 

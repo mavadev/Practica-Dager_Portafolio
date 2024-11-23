@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
-		background-size: auto;
-		background-repeat: repeat;
-		background-blend-mode: overlay;
-		background-image: url('/images/otros/pepino-white.png');
 		@apply font-primary bg-black text-white leading-loose;
 	}
 
+	section#inicio {
+		background-repeat: repeat;
+		background-size: 100px;
+		background-position: center;
+		background-position: 0, 120px;
+		background-image: url('/images/otros/pepino-white.png'); 
+		background-blend-mode: overlay;
+	}
+
 	.title {
-		@apply text-[56px] md:text-[72px] leading-[1.1] font-semibold;
+		@apply text-[56px] md:text-[80px] leading-[1.1] font-semibold;
 	}
 
 	.h1 {
@@ -26,6 +35,7 @@
 	.h3 {
 		@apply text-[20px] md:text-[24px] leading-[1.1] font-semibold;
 	}
+
 	@keyframes appear {
 		from {
 			opacity: 0;
@@ -35,8 +45,17 @@
 		}
 	}
 	section {
+		scroll-margin: 130px;
 		animation: appear linear;
 		animation-timeline: view();
 		animation-range: entry 0% cover 20%;
+	}
+
+	.mask  {
+		mask-size: 0;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-image: url('/images/otros/mask.svg');
+		transition: mask-size .5s ease-out;
 	}
 }

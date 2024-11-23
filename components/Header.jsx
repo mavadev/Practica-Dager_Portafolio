@@ -1,4 +1,3 @@
-'use client';
 import Logo from './Logo';
 import LumberGame from './LumberGame';
 import Menu from './Menu';
@@ -11,7 +10,7 @@ const Header = () => {
 				<LumberGame />
 				{/* Logo */}
 				<Logo />
-				{/* Navegation */}
+				{/* Navegacion */}
 				<Menu />
 			</div>
 		</header>

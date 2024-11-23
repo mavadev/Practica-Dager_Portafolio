@@ -1,7 +1,4 @@
-import { Hero } from './sections/Hero';
-import { AboutMe } from './sections/AboutMe';
-import { Canales } from './sections/Canales';
-import { ConectaConmigo } from './sections/ConectaConmigo';
+import { Hero, AboutMe, Canales, ConectaConmigo } from './sections';
 
 export default function Home() {
 	return (
