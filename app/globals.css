@@ -8,7 +8,7 @@
 	}
 
 	body {
-		/* overflow: hidden; */
+		overflow: hidden;
 		@apply font-primary bg-black text-white leading-loose;
 	}
 

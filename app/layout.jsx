@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body className={`${titleFont.variable} ${textFont.variable} antialiased`}>
-				{/* <Loader /> */}
+				<Loader />
 				<Header />
 				{children}
 				<Footer />
