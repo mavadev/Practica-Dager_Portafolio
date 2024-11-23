@@ -37,7 +37,13 @@ export const Footer = () => {
 				</div>
 				<div className='w-full pt-10 flex flex-col md:flex-row items-center justify-between'>
 					<p className='text-gray'>
-						Diseñado y Desarrollo por Gianmarco para <span className='text-orange'>Dager</span>
+						Diseñado y Desarrollo por{' '}
+						<span
+							title='Quien sos vos?'
+							className='line-through'>
+							Gianmarco
+						</span>{' '}
+						para <span className='text-orange'>Dager</span>
 					</p>
 					<Link
 						target='_blank'
