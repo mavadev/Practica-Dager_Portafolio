@@ -3,6 +3,20 @@ import Logo from './Logo';
 import Link from 'next/link';
 import Navegation from './Navegation';
 import { networks } from '@/data/menuData';
+import { motion } from 'framer-motion';
+
+const appear = {
+	hidden: { opacity: 0.5, y: 20 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.4,
+			type: 'tween',
+			ease: 'easeIn',
+		},
+	},
+};
 
 export const Footer = () => {
 	return (
@@ -10,7 +24,11 @@ export const Footer = () => {
 			<div className='container mx-auto'>
 				{/* Content */}
 				<div className='flex flex-row justify-between'>
-					<div className='flex flex-col gap-8 max-md:text-center max-md:items-center flex-1'>
+					<motion.div
+						initial='hidden'
+						variants={appear}
+						whileInView='visible'
+						className='flex flex-col gap-8 max-md:text-center max-md:items-center flex-1'>
 						{/* Logo */}
 						<Logo />
 						{/* Redes */}
@@ -25,7 +43,7 @@ export const Footer = () => {
 								</Link>
 							))}
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Links */}
 					<div className='max-md:hidden'>
