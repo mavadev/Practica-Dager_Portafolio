@@ -3,6 +3,7 @@
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 import { GiGuitarBassHead } from 'react-icons/gi';
+import AnimatedSection from './AnimatedSection';
 
 const elements = Array.from({ length: 10 }).map((_, index) => ({
 	original: `/images/galeria/dager-foto-${index}.webp`,
@@ -11,7 +12,7 @@ const elements = Array.from({ length: 10 }).map((_, index) => ({
 
 export const AboutMe = () => {
 	return (
-		<section
+		<AnimatedSection
 			id='dager'
 			className='mt-28 mb-20'>
 			<div className='container mx-auto flex flex-col-reverse md:flex-row gap-10 md:items-end'>
@@ -41,6 +42,6 @@ export const AboutMe = () => {
 					</p>
 				</div>
 			</div>
-		</section>
+		</AnimatedSection>
 	);
 };

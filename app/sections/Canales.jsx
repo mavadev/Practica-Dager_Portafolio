@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { channels } from '@/data/channels';
+import AnimatedSection from './AnimatedSection';
 
 export const Canales = () => {
 	return (
-		<section
+		<AnimatedSection
 			id='canales'
 			className='mb-16 container mx-auto'>
 			<header className='max-md:text-center mb-14'>
@@ -43,6 +44,6 @@ export const Canales = () => {
 					</div>
 				))}
 			</div>
-		</section>
+		</AnimatedSection>
 	);
 };

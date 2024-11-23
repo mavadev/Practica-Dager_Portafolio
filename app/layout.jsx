@@ -5,6 +5,7 @@ import './globals.css';
 // Components
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Loader } from '@/components/Loader';
 
 // Fuentes
 const titleFont = Bagel_Fat_One({ subsets: ['latin'], weight: ['400'], variable: '--font-bagelFatOne' });
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
 				/>
 			</head>
 			<body className={`${titleFont.variable} ${textFont.variable} antialiased`}>
+				<Loader />
 				<Header />
 				{children}
 				<Footer />

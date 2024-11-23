@@ -6,6 +6,19 @@ import { motion } from 'framer-motion';
 import { IoIosArrowDown } from 'react-icons/io';
 import useMaskHidden from '../utils/useMaskHidden';
 
+const landingImage = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			delay: 2.8,
+			duration: 0.5,
+			type: 'spring',
+			stiffness: 30,
+		},
+	},
+};
+
 export const Hero = () => {
 	const { size, setIsHovered, mousePosition, handleMouseMove } = useMaskHidden(300);
 
@@ -22,18 +35,12 @@ export const Hero = () => {
 				</div>
 				{/* Foto */}
 				<motion.div
+					animate='show'
+					initial='hidden'
+					variants={landingImage}
 					onMouseMove={handleMouseMove}
 					onMouseEnter={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
-					initial={{ opacity: 0 }}
-					animate={{
-						opacity: 1,
-						transition: {
-							delay: 0.1,
-							duration: 0.3,
-							ease: 'easeIn',
-						},
-					}}
 					className='relative aspect-video w-full md:flex-[2] rotate-3'>
 					<Image
 						fill
