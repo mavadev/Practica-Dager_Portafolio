@@ -12,6 +12,11 @@
 		@apply font-primary bg-black text-white leading-loose;
 	}
 
+	
+	section {
+		scroll-margin: 130px;
+	}
+
 	section#inicio {
 		background-repeat: repeat;
 		background-size: 100px;
@@ -19,6 +24,14 @@
 		background-position: 0, 120px;
 		background-image: url('/images/otros/pepino-white.png'); 
 		background-blend-mode: overlay;
+	}
+
+	.mask  {
+		mask-size: 0;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-image: url('/images/otros/mask.svg');
+		transition: mask-size .5s ease-out;
 	}
 
 	.title {
@@ -35,28 +48,5 @@
 
 	.h3 {
 		@apply text-[20px] md:text-[24px] leading-[1.1] font-semibold;
-	}
-
-	/* @keyframes appear {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-	section {
-		scroll-margin: 130px;
-		animation: appear linear;
-		animation-timeline: view();
-		animation-range: entry 0% cover 20%;
-	} */
-
-	.mask  {
-		mask-size: 0;
-		mask-position: center;
-		mask-repeat: no-repeat;
-		mask-image: url('/images/otros/mask.svg');
-		transition: mask-size .5s ease-out;
 	}
 }
